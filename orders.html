@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Orders - AIO All In One</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>AIO - All In One</h1>
+  <a href="index.html">Home</a><a href="groceries.html">Groceries</a><a href="medicines.html">Medicines</a><a href="printouts.html">Printouts</a><a href="services.html">Home Services</a><a href="orders.html">Orders</a><a href="cart.html" id="cart-link">Cart (0)</a>
+</header>
+<main>
+<h2>Your Orders</h2>
+<p>Order status changes automatically every 10 seconds so you can see tracking in the demo.</p>
+<table>
+  <tr><th>Order no.</th><th>Type</th><th>Details</th><th>Total</th><th>Status</th><th>Date</th></tr>
+  <tbody id="order-rows"></tbody>
+</table>
+</main>
+<footer>AIO - All In One | College project made with HTML, CSS and JavaScript</footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script>
+showCartCount();
+showOrders(); setInterval(showOrders, 3000);
+</script>
+</body>
+</html>

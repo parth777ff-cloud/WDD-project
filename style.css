@@ -1,0 +1,19 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #ffffff; color: #222222; font-size: 16px; }
+header { background: #2e7d32; color: white; padding: 12px 20px; }
+header h1 { margin: 0 0 8px 0; font-size: 24px; }
+header a { color: white; margin-right: 16px; text-decoration: none; font-weight: bold; }
+header a:hover { text-decoration: underline; }
+main { padding: 20px; max-width: 900px; margin: 0 auto; }
+footer { text-align: center; padding: 14px; border-top: 1px solid #cccccc; margin-top: 30px; font-size: 14px; }
+h2 { margin-top: 0; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 16px; }
+th, td { border: 1px solid #999999; padding: 8px; text-align: left; }
+th { background: #eeeeee; }
+input, select, textarea { padding: 6px; margin: 4px 0 10px 0; font-size: 15px; }
+label { display: block; font-weight: bold; }
+button { padding: 6px 12px; background: #2e7d32; color: white; border: none; cursor: pointer; font-size: 15px; }
+button.red { background: #c62828; }
+.box { border: 1px solid #999999; padding: 14px; margin-bottom: 16px; }
+.msg { color: #1b5e20; font-weight: bold; min-height: 22px; }
+.error { color: #c62828; font-weight: bold; }
+.links a { display: inline-block; border: 1px solid #2e7d32; padding: 14px 20px; margin: 6px 6px 6px 0; color: #2e7d32; text-decoration: none; font-weight: bold; }

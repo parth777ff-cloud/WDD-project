@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Services - AIO All In One</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>AIO - All In One</h1>
+  <a href="index.html">Home</a><a href="groceries.html">Groceries</a><a href="medicines.html">Medicines</a><a href="printouts.html">Printouts</a><a href="services.html">Home Services</a><a href="orders.html">Orders</a><a href="cart.html" id="cart-link">Cart (0)</a>
+</header>
+<main>
+<h2>Home Services</h2>
+<p id="msg" class="msg"></p>
+<label for="svc-cat">Choose a service type</label>
+<select id="svc-cat"></select>
+<table>
+  <tr><th>Select</th><th>Service</th><th>Details</th><th>Price</th></tr>
+  <tbody id="svc-rows"></tbody>
+</table>
+<p id="svc-total"><b>Estimated total: Rs 0</b></p>
+<div class="box">
+  <label for="svc-address">Address</label><input type="text" id="svc-address" size="40">
+  <label for="svc-date">Date</label><input type="date" id="svc-date">
+  <label for="svc-slot">Time slot</label><select id="svc-slot"><option>9 AM - 12 PM</option><option>12 PM - 3 PM</option><option>3 PM - 6 PM</option></select>
+</div>
+<button onclick="bookService()">Book service</button>
+</main>
+<footer>AIO - All In One | College project made with HTML, CSS and JavaScript</footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script>
+showCartCount();
+startServices();
+</script>
+</body>
+</html>
